@@ -56,3 +56,12 @@ export const getFullNameTicker = (ticker) => {
             return '';
     }
 }
+
+export const checkOfNegativeNumber = (prevPrice, price) => {
+    const result = prevPrice - price;
+    const isNegative = result < 0;
+    return ({
+        result: result ? `${result.toFixed(2)} $` : '- No data - ',
+        isNegative
+    })
+}

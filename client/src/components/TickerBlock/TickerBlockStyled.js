@@ -8,8 +8,7 @@ export const BlockWrapper = styled.div`
   margin: 20px;
   box-sizing: border-box;
   padding: 17px 13px ;
-  box-shadow:rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-  //box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow:rgb(0 0 0 / 20%) 0 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
   position: relative;
 `
 export const Ticker = styled.div`
@@ -18,8 +17,6 @@ export const Ticker = styled.div`
   box-sizing: border-box;
   margin:  10px;
   color: #593c4a;
- 
-  //margin-top: 20px;
   font-weight: bold;
 `
 export const Wrap = styled.div`
@@ -48,7 +45,7 @@ export const PriceDifference = styled(Abbreviation)`&& {
 
 }`
 export const Logo = styled.div`
- position: absolute;
+  position: absolute;
   left: 200px;
   top: 60px
 `;

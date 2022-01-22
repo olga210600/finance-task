@@ -1,8 +1,8 @@
 import {configureStore} from "@reduxjs/toolkit";
-import counterSlice from "./createBlock/main";
+import tickerSlice from "./slices/tickerSlice";
 
 const store = configureStore({
-    reducer: counterSlice.reducer
+    reducer: tickerSlice.reducer
 })
 
 export default store;

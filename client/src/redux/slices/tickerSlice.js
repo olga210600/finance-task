@@ -8,20 +8,21 @@ const initialState = {
     }
 }
 
-const counterSlice = createSlice({
-    name: 'counter',
+const tickerSlice = createSlice({
+    name: 'ticker',
     initialState: initialState,
     reducers: {
-        getTickets: (state, { payload }) => {
+        getTickets: (state, {payload}) => {
             state.tickersData.prevData = state.tickersData.currData;
             state.tickersData.currData = payload;
         }
     }
 });
 
-export const counterSelector = {
+export const tickerSelector = {
     getTickers: (state) => state.tickersData,
 }
 
-export const {getTickets} = counterSlice.actions;
-export default counterSlice;
+export const {getTickets} = tickerSlice.actions;
+
+export default tickerSlice;
